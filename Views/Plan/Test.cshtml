@@ -1,0 +1,51 @@
+﻿@{
+    //C# Code
+
+    int age = 21;
+    string PageTitle="Plans";
+    List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+}
+
+
+<html>
+
+    <head>
+
+        <title>@PageTitle</title>
+    </head>
+
+    <body>
+    <h1>This  is Test 1 For Plans For Me </h1>
+    <p>@age</p>
+    <p>@age + 1</p>
+    <p>(@age+1)</p>
+
+    @if (age > 18)
+    {
+        <p>Adult</p>
+    }
+    else
+    {
+        <p>Mannor</p>
+    }
+
+    @foreach (var item in numbers)
+    {
+    <p>@item</p>
+    }
+
+    <a asp-controller="Home" asp-action="Index">Home</a>
+
+    <!--HTML Comment-->
+    @*C# Commment*@
+
+
+    </body>
+
+
+
+
+
+
+</html>
